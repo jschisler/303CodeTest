@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		97EC8DEF22A9807300C93C23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EC8DEE22A9807300C93C23 /* AppDelegate.swift */; };
-		97EC8DF122A9807300C93C23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EC8DF022A9807300C93C23 /* ViewController.swift */; };
 		97EC8DF422A9807300C93C23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EC8DF222A9807300C93C23 /* Main.storyboard */; };
 		97EC8DF622A9807500C93C23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97EC8DF522A9807500C93C23 /* Assets.xcassets */; };
 		97EC8DF922A9807500C93C23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97EC8DF722A9807500C93C23 /* LaunchScreen.storyboard */; };
 		97EC8E0422A9807500C93C23 /* _03CodeTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EC8E0322A9807500C93C23 /* _03CodeTestTests.swift */; };
+		97EC8E0F22A980D300C93C23 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EC8E0E22A980D300C93C23 /* Person.swift */; };
+		97EC8E1122A9813E00C93C23 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EC8E1022A9813E00C93C23 /* ApiClient.swift */; };
+		97EC8E1622A9893400C93C23 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97EC8E1522A9893400C93C23 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		97EC8DEB22A9807300C93C23 /* 303CodeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 303CodeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EC8DEE22A9807300C93C23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97EC8DF022A9807300C93C23 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		97EC8DF322A9807300C93C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97EC8DF522A9807500C93C23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97EC8DF822A9807500C93C23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		97EC8DFF22A9807500C93C23 /* 303CodeTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 303CodeTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EC8E0322A9807500C93C23 /* _03CodeTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _03CodeTestTests.swift; sourceTree = "<group>"; };
 		97EC8E0522A9807500C93C23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97EC8E0E22A980D300C93C23 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		97EC8E1022A9813E00C93C23 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		97EC8E1522A9893400C93C23 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +81,11 @@
 		97EC8DED22A9807300C93C23 /* 303CodeTest */ = {
 			isa = PBXGroup;
 			children = (
+				97EC8E1422A988EE00C93C23 /* Views */,
+				97EC8E1322A988E100C93C23 /* API */,
+				97EC8E1222A988D900C93C23 /* Models */,
 				97EC8DEE22A9807300C93C23 /* AppDelegate.swift */,
-				97EC8DF022A9807300C93C23 /* ViewController.swift */,
-				97EC8DF222A9807300C93C23 /* Main.storyboard */,
 				97EC8DF522A9807500C93C23 /* Assets.xcassets */,
-				97EC8DF722A9807500C93C23 /* LaunchScreen.storyboard */,
 				97EC8DFA22A9807500C93C23 /* Info.plist */,
 			);
 			path = 303CodeTest;
@@ -94,6 +98,32 @@
 				97EC8E0522A9807500C93C23 /* Info.plist */,
 			);
 			path = 303CodeTestTests;
+			sourceTree = "<group>";
+		};
+		97EC8E1222A988D900C93C23 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				97EC8E0E22A980D300C93C23 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		97EC8E1322A988E100C93C23 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				97EC8E1022A9813E00C93C23 /* ApiClient.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		97EC8E1422A988EE00C93C23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				97EC8DF722A9807500C93C23 /* LaunchScreen.storyboard */,
+				97EC8DF222A9807300C93C23 /* Main.storyboard */,
+				97EC8E1522A9893400C93C23 /* TableViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +227,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97EC8DF122A9807300C93C23 /* ViewController.swift in Sources */,
+				97EC8E0F22A980D300C93C23 /* Person.swift in Sources */,
 				97EC8DEF22A9807300C93C23 /* AppDelegate.swift in Sources */,
+				97EC8E1622A9893400C93C23 /* TableViewController.swift in Sources */,
+				97EC8E1122A9813E00C93C23 /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,11 +395,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL3Q94HMUA;
 				INFOPLIST_FILE = 303CodeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schisler.-03CodeTest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schisler.303CodeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,11 +414,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VL3Q94HMUA;
 				INFOPLIST_FILE = 303CodeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.schisler.-03CodeTest";
+				PRODUCT_BUNDLE_IDENTIFIER = com.schisler.303CodeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
